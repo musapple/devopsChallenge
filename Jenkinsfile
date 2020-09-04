@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("Checkout code") {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'b300aa55-6dcd-4373-9ba9-e9792d46c772', url: 'https://github.com/musapple/DevopsChallenge.git']]])
+                checkout scm
             }
         }
         stage("Build image") {
