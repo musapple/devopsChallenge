@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'cicd'
         CLUSTER_NAME = 'cluster-1'
         LOCATION = 'us-central1-c'
-        CREDENTIALS_ID = 'CICD'
+        CREDENTIALS_ID = 'cicd'
     }
     stages {
         stage("Checkout code") {
